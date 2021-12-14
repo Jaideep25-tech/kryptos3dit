@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="723" maxWidth="1139" minHeight="723" minWidth="1139" prefHeight="723.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kryptos3dit.ui.homepageController">
+   <children>
+      <HBox layoutX="-2.0" prefHeight="27.0" prefWidth="1142.0" styleClass="dashboard-top" stylesheets="@design.css">
+         <children>
+            <Label prefHeight="25.0" prefWidth="166.0" text="KRYPTOS3DIT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="480.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="mainArea" layoutY="26.0" prefHeight="696.0" prefWidth="1142.0">
+         <children>
+            <ImageView fitHeight="696.0" fitWidth="1140.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/homepageBG.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="696.0" prefWidth="260.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#navigateToEncryption" prefHeight="182.0" prefWidth="260.0" stylesheets="@design.css" text="ENCRYPTION">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#navigateToFilter" prefHeight="182.0" prefWidth="260.0" styleClass="button2" stylesheets="@design.css" text="APPLY FILTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openGoogleImages" prefHeight="182.0" prefWidth="260.0" styleClass="button3" stylesheets="@design.css" text="SEARCH IMAGE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#aboutMessage" prefHeight="160.0" prefWidth="260.0" styleClass="button4" stylesheets="@design.css" text="ABOUT ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="674.0" fitWidth="764.0" layoutX="336.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Logo.png" />
+               </image>
+            </ImageView>
+            <WebView fx:id="myweb" layoutX="260.0" layoutY="-2.0" prefHeight="696.0" prefWidth="877.0" />
+            <FontAwesomeIcon fx:id="closeBtn" glyphName="CLOSE" layoutX="1104.0" layoutY="25.0" onMouseClicked="#closeGI" size="25" />
+            <ImageView fx:id="about" fitHeight="696.0" fitWidth="1139.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/about.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIcon fx:id="closeBtn2" glyphName="CLOSE" layoutX="1104.0" layoutY="25.0" onMouseClicked="#closeAbout" size="30" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

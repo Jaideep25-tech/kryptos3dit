@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kryptos3dit.ui.encryptionController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1140.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/filterAndEncryptionBG.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="537.0" layoutY="148.0" mnemonicParsing="false" onAction="#encrypt" prefHeight="99.0" prefWidth="353.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="ENCRYPT">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Button>
+      <Button layoutX="537.0" layoutY="358.0" mnemonicParsing="false" onAction="#decrypt" prefHeight="99.0" prefWidth="353.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="DECRYPT">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="importButton2" mnemonicParsing="false" onAction="#importFile" prefHeight="34.0" prefWidth="165.0" styleClass="Insertbutton" stylesheets="@filterDesign.css" text="IMPORT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="decryptKey" layoutX="212.0" layoutY="372.0" prefHeight="24.0" prefWidth="243.0" promptText="Enter Password" />
+      <PasswordField fx:id="decryptKey1" layoutX="212.0" layoutY="417.0" prefHeight="24.0" prefWidth="243.0" promptText="Confirm Password" />
+      <PasswordField fx:id="encryptKey" layoutX="212.0" layoutY="164.0" prefHeight="24.0" prefWidth="243.0" promptText="Enter Password" />
+      <PasswordField fx:id="encryptKey1" layoutX="212.0" layoutY="207.0" prefHeight="24.0" prefWidth="243.0" promptText="Confirm Password" />
+      <TextField fx:id="encryptyTextField" layoutX="212.0" layoutY="164.0" prefHeight="24.0" prefWidth="243.0" promptText="Enter Password" />
+      <TextField fx:id="encryptTextField1" layoutX="212.0" layoutY="207.0" prefHeight="24.0" prefWidth="243.0" promptText="Confirm Password" />
+      <TextField fx:id="decryptTextField" layoutX="212.0" layoutY="372.0" prefHeight="24.0" prefWidth="243.0" promptText="Enter Password" />
+      <TextField fx:id="decryptTextField1" layoutX="212.0" layoutY="417.0" prefHeight="24.0" prefWidth="243.0" promptText="Confirm Password" />
+      <FontAwesomeIcon fx:id="toggleOff" glyphName="TOGGLE_OFF" layoutX="178.0" layoutY="183.0" onMouseClicked="#viewPassword" size="20" wrappingWidth="21.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="toggleOn" glyphName="TOGGLE_ON" layoutX="178.0" layoutY="183.0" onMouseClicked="#viewPassword" size="20" wrappingWidth="21.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="decryptionToggleOff" glyphName="TOGGLE_OFF" layoutX="178.0" layoutY="391.0" onMouseClicked="#viewPasswordDecryption" size="20" wrappingWidth="21.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="decryptionToggleOnn" glyphName="TOGGLE_ON" layoutX="178.0" layoutY="391.0" onMouseClicked="#viewPasswordDecryption" size="20" wrappingWidth="21.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon glyphName="LOCK" glyphStyle="LOCK" layoutX="566.0" layoutY="206.0" size="25" />
+      <FontAwesomeIcon glyphName="UNLOCK" glyphStyle="LOCK" layoutX="574.0" layoutY="416.0" size="25" />
+      <Button fx:id="importButton" layoutX="209.0" layoutY="552.0" mnemonicParsing="false" onAction="#importFile" prefHeight="85.0" prefWidth="682.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="CLICK TO IMPORT FILE">
+         <font>
+            <Font name="C059-Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="importMessage" layoutX="209.0" layoutY="552.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="682.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="FILE IMPORTED" textFill="WHITE">
+         <font>
+            <Font name="C059-Bold" size="29.0" />
+         </font>
+      </Button>
+      <FontAwesomeIcon glyphName="ARROW_LEFT" layoutX="1107.0" layoutY="36.0" onMouseClicked="#backToHomepage" size="30" text="" />
+      <Button fx:id="importButton3" mnemonicParsing="false" onAction="#importFile" prefHeight="34.0" prefWidth="165.0" styleClass="Insertbutton" stylesheets="@filterDesign.css" text="IMPORT NEW FILE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

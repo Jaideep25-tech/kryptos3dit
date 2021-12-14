@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kryptos3dit.ui.UifxmlController">
+   <content>
+      <AnchorPane id="AnchorPane" fx:id="watermarkText" prefHeight="693.0" prefWidth="1140.0">
+         <children>
+            <ImageView fitHeight="695.0" fitWidth="1140.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/filterAndEncryptionBG.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="insertImageButton" layoutY="2.0" mnemonicParsing="false" onAction="#insertImage" prefHeight="30.0" prefWidth="156.0" styleClass="MenuButton" stylesheets="@filterDesign.css" text="Insert ">
+               <font>
+                  <Font name="C059-Bold" size="13.0" />
+               </font></Button>
+            <ImageView fx:id="imageviewer" fitHeight="301.0" fitWidth="458.0" layoutX="584.0" layoutY="30.0" pickOnBounds="true" />
+            <VBox layoutY="32.0" nodeOrientation="INHERIT" prefHeight="647.0" prefWidth="232.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#horizontalMirrorImage" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="MIRROR HORIZONTAL">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#verticalMirrorImage" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="MIRROR VERTICAL">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applyGrayscale" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="GRAYSCALE">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#brighten" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="BRIGHTEN">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#sharpenImage" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="SHARPEN">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applyGaussianBlur" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="BLUR">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#rotateImage" prefHeight="65.0" prefWidth="232.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="ROTATE">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#pixelateImage" prefHeight="65.0" prefWidth="232.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="PIXELATE">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applyWaterMark" prefHeight="65.0" prefWidth="233.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="WATERMARK">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applyDetectEdges" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="DETECT EDGES">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applySepia" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="SEPIA">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#posterizeImage" prefHeight="65.0" prefWidth="232.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="POSTERIZE">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#applyNegative" prefHeight="65.0" prefWidth="234.0" styleClass="Filterbutton" stylesheets="@filterDesign.css" text="NEGATIVE">
+                     <font>
+                        <Font name="C059-Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="advanceEdits" layoutX="240.0" layoutY="118.0" prefHeight="531.0" prefWidth="212.0" spacing="30.0">
+               <children>
+                  <Slider fx:id="brightnessSlider" max="1.0" min="-1.0" prefHeight="61.0" prefWidth="211.0">
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <Slider fx:id="sharpenSlider" max="360.0" prefHeight="103.0" prefWidth="211.0">
+                     <VBox.margin>
+                        <Insets top="-60.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <Slider fx:id="blurSlider" max="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="-80.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <Slider fx:id="rotateSlider" max="360.0" minWidth="-Infinity" prefHeight="16.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="-40.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <Slider fx:id="pixelateSlider" max="20.0" />
+                  <TextField fx:id="text" prefHeight="24.0" prefWidth="200.0" promptText="enter text" />
+               </children>
+               <padding>
+                  <Insets right="1.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="choosebutton1" layoutX="285.0" layoutY="2.0" mnemonicParsing="false" onAction="#enableEdits" prefHeight="31.0" prefWidth="204.0" styleClass="MenuButton" stylesheets="@filterDesign.css" text="Advance Editing Options">
+               <font>
+                  <Font name="C059-Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="choosebutton2" layoutX="156.0" layoutY="3.0" mnemonicParsing="false" onAction="#saveImage" prefHeight="30.0" prefWidth="128.5" styleClass="MenuButton" stylesheets="@filterDesign.css" text="Save ">
+               <font>
+                  <Font name="C059-Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="chooseImage" layoutX="584.0" layoutY="30.0" mnemonicParsing="false" onAction="#insertImage" prefHeight="301.0" prefWidth="458.0" styleClass="Insertbutton" stylesheets="@filterDesign.css" text="Tap To Insert Image">
+               <font>
+                  <Font name="C059-Bold" size="28.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="updatedImageView" fitHeight="301.0" fitWidth="458.0" layoutX="584.0" layoutY="360.0" pickOnBounds="true" />
+            <FontAwesomeIcon glyphName="ARROW_LEFT" layoutX="1081.0" layoutY="27.0" onMouseClicked="#backToHomepage" size="30" />
+            <Label fx:id="brightenVal" layoutX="452.0" layoutY="200.0" prefHeight="21.0" prefWidth="55.0" textFill="WHITE" />
+            <Label fx:id="sharpenVal" layoutX="452.0" layoutY="250.0" prefHeight="21.0" prefWidth="55.0" text="Label" textFill="WHITE" />
+            <Label fx:id="blurVal" layoutX="452.0" layoutY="303.0" prefHeight="21.0" prefWidth="55.0" text="Label" textFill="WHITE" />
+            <Label fx:id="rotateVal" layoutX="452.0" layoutY="350.0" prefHeight="21.0" prefWidth="55.0" text="Label" textFill="WHITE" />
+            <Label fx:id="pixelateVal" layoutX="452.0" layoutY="394.0" prefHeight="21.0" prefWidth="55.0" text="Label" textFill="WHITE" />
+            <Button fx:id="insertNewImageButton" layoutY="3.0" mnemonicParsing="false" onAction="#insertImage" prefHeight="30.0" prefWidth="156.0" styleClass="MenuButton" stylesheets="@filterDesign.css" text="Insert  New Image">
+               <font>
+                  <Font name="C059-Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

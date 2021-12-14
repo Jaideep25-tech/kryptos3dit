@@ -1,0 +1,43 @@
+.Filterbutton {
+    -fx-text-fill: white;
+    -fx-background-radius: none;
+    -fx-border-radius: none;
+    -fx-background-color: transparent;
+    -fx-border-color: #1EEFF9;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+.Filterbutton:hover {
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-background-color: #0066ff;
+    -fx-cursor: hand;
+}
+.MenuButton{
+    -fx-text-fill: black;
+    -fx-background-radius: none;
+    -fx-border-radius: none;
+    -fx-background-color: white;
+    -fx-border-color: #1EEFF9;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+.Insertbutton {
+    -fx-text-fill: #444444;
+    -fx-background-radius: none;
+    -fx-border-radius: none;
+    -fx-background-color: white;
+    -fx-border-color:#1EEFF9;
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+}
+.Insertbutton:hover {
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+.imageBorder{
+    -fx-background-color: #222222
+}
