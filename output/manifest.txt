@@ -1,0 +1,2 @@
+Main-Class: kryptos3dit.Main
+Class-Path: app.jar lib/fontawesomefx-8.2.jar
