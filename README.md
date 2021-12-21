@@ -1,1 +1,42 @@
 # kryptos3dit
+
+kryptos3dit is a free and open-source tool that helps you edit images and encrypt files.
+
+<img src="./docs/Logo.png" alt="logo" width="400"/>
+
+## Tech Stack
+
+The application is primarily written in Java. The source code can be built using Python3.
+
+## Building
+
+The project has two dependencies which need to be placed under `build/lib`
+
+1. fontawesomefx-8.2.jar 
+2. javafx-sdk-11.0.2
+
+The tree view of the build directory should look like the following. 
+
+<img width="167" alt="build" src="https://user-images.githubusercontent.com/79747022/146982567-18f93f2b-60d6-4981-83d6-6b23a7abb670.png">
+
+
+Once you have this ready, fire up your command prompt and `cd` into the root directory of this project. 
+
+```cmd
+cd build
+py build.py
+```
+
+You can find the produced files under `output` directory. All you have to do is run the launcher.bat file! 
+
+## Authors
+
+1. [Jaideep Singh](https://github.com/Jaideep25-tech) 
+2. [Mohammad Shoab](https://github.com/Mohammad-Shoab) 
+3. [Vivek Nathani](https://github.com/Aasmant) 
+4. [Sanskar Kumar Burman](https://github.com/sanskaros)
+
+
+## License
+
+[MIT](./LICENSE.md)
