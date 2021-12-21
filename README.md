@@ -45,4 +45,28 @@ You can find the produced files under `output` directory. All you have to do is 
 
 [MIT](./LICENSE.md)
   
+<div align="center">
+  
+# UI
 
+This is how our app looks and its various different screens</div>
+
+## Home Screen
+
+![hs](https://user-images.githubusercontent.com/79747022/146987058-b07b5116-ec8e-4b9d-9909-d5a150b9b603.jpeg)
+
+## Encryption/Decryption Screen
+
+![ed](https://user-images.githubusercontent.com/79747022/146987130-3d29704d-7d7a-4c3d-8c20-3917403672b4.jpeg)
+
+## Image filter Screen
+
+![if](https://user-images.githubusercontent.com/79747022/146987193-d64199c8-41f4-4135-958f-107d7c045e5e.jpeg)
+
+## Search Image
+
+![s](https://user-images.githubusercontent.com/79747022/146987241-4cedf18d-8078-4733-9fd6-706eaf37e035.jpeg)
+
+## About
+
+![a](https://user-images.githubusercontent.com/79747022/146987638-7a61bfb5-73c0-4c56-a973-e014266587f0.jpeg)
