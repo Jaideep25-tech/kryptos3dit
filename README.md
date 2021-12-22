@@ -37,7 +37,7 @@ You can find the produced files under `output` directory. All you have to do is 
 
 1. [Jaideep Singh](https://github.com/Jaideep25-tech) 
 2. [Mohammad Shoab](https://github.com/Mohammad-Shoab) 
-3. [Vivek Nathani](https://github.com/Aasmant) 
+3. [Aasmant Patil](https://github.com/Aasmant) 
 4. [Sanskar Kumar Burman](https://github.com/sanskaros)
 
 
