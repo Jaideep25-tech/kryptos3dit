@@ -19,7 +19,7 @@ The project has two dependencies which need to be placed under `build/lib`
 1. fontawesomefx-8.2.jar 
 2. javafx-sdk-11.0.2
 
-The tree view of the build directory should look like the following. 
+The tree view of the build directory should be placed in following. 
 
 <img src="https://user-images.githubusercontent.com/79747022/146982567-18f93f2b-60d6-4981-83d6-6b23a7abb670.png">
 
