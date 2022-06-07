@@ -1,6 +1,6 @@
 <div align="center">
   
-#  kryptos3dit
+# kryptos3dit
 
 ### It is a useful application that allows you to encrypt and decrypt videos in a very short period of time. It is an easy-to-use and highly secure application. It also has an image filter that allows you to filter images based on their design. In addition, an image search on the web has been added. One can search for images on Google with a single click. Overall, this application is a time saver for everyone.
 
